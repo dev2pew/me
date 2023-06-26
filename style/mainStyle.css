@@ -1,0 +1,229 @@
+/* user styling */
+* {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+
+@keyframes gradientSCROLL {
+    0%{background-position: 0%}
+    50%{background-position: 250%;}
+    100%{background-position: 0%;}
+}
+
+.dev2pew {
+    color: aquamarine;
+}
+
+.gradRAINBOW { /* gradient rainbow animation */
+    color: white;
+    background-image: repeating-linear-gradient(
+        to left, 
+        #9a00b2, 
+        #007f7f, 
+        #008c00, 
+        #b3b300, 
+        #b35900, 
+        #b30021
+    ) !important;
+    background-clip: unset;
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientSCROLL 3s ease infinite;
+}
+
+.gradRUBY {
+    background-image: repeating-linear-gradient(
+        to left, #c80064, #b600c2, #9600c2, #e9cbf7, #ffffff, #e9cbf7, #9600c2, #c80064
+    ) !important;
+}
+
+
+/* default styling */
+:root {
+    --header-image: url('../imgs/headMain.jpeg');
+    /* --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif'); */
+
+    --content: rgb(67, 37, 110);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: rgb(8, 3, 26);
+
+    background-size: 65px;
+    color: rgb(252, 234, 255);
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: rgb(237, 100, 245);
+    font-weight: bold;
+}
+
+#header {
+    width: 100%;
+    background-color: rgb(94, 78, 140);
+
+    height: 150px;
+
+    background-image: var(--header-image);
+    background-size: 100%;
+}
+
+#navbar {
+    height: 40px;
+    background-color: rgb(19, 9, 45);
+
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    color: rgb(237, 100, 245);
+
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: rgb(164, 156, 186);
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: rgb(36, 20, 69);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+main {
+    background-color: rgb(67, 37, 110);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+*/ #leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: rgb(19, 9, 45);
+
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(237, 100, 245);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: rgb(237, 100, 245);
+}
+
+.box {
+    background-color: rgb(19, 9, 45);
+    border: 1px solid rgb(237, 100, 245);
+    padding: 10px;
+}
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: rgb(19, 9, 45);
+}
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}

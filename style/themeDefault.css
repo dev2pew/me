@@ -1,0 +1,60 @@
+:root {
+    --header-image: url('../imgs/headMain.jpeg');
+    --content: rgb(67, 37, 110);
+}
+
+body {
+    background-color: rgb(8, 3, 26);
+    color: rgb(252, 234, 255);
+}
+
+#container a {
+    color: rgb(237, 100, 245);
+}
+
+#header {
+    background-color: rgb(94, 78, 140);
+}
+
+#navbar {
+    background-color: rgb(19, 9, 45);
+}
+
+#navbar li a {
+    color: rgb(237, 100, 245);
+}
+
+#navbar li a:hover {
+    color: rgb(164, 156, 186);
+}
+
+aside {
+    background-color: rgb(36, 20, 69);
+}
+
+main {
+    background-color: rgb(67, 37, 110);
+}
+
+footer {
+    background-color: rgb(19, 9, 45);
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(237, 100, 245);
+}
+
+strong {
+    color: rgb(237, 100, 245);
+}
+
+.box {
+    background-color: rgb(19, 9, 45);
+    border: 1px solid rgb(237, 100, 245);
+}
+
+#topBar {
+    background-color: rgb(19, 9, 45);
+}

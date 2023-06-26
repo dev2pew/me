@@ -1,0 +1,31 @@
+/* modify scrollbar style to match project theme */
+
+::-webkit-scrollbar { /* scrollbar width */
+    width: 10px;
+    height: 10px;
+}
+
+/* ::-webkit-scrollbar-button */
+
+::-webkit-scrollbar-track { /* scrollbar area */
+    background: rgba(185, 160, 75, 0.55);
+}
+
+/* ::-webkit-scrollbar-track-piece */
+
+::-webkit-scrollbar-thumb { /* scrollbar element */
+    /* background: rgba(100, 148, 237, 0.70); */
+    background: rgba(185, 160, 75, 0.55);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgba(185, 160, 75, 0.55);
+}
+
+/* ::-webkit-resizer */
+
+::-webkit-scrollbar-thumb:hover { /* scrollbar on hover */
+    /* background: rgba(100, 148, 237, 0.75); */
+    background: rgba(237, 200, 100, 0.25);
+}

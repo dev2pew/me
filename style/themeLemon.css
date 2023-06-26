@@ -1,0 +1,60 @@
+:root {
+    --header-image: url('../imgs/headLemons.jpg');
+    --content: rgb(67, 37, 110);
+}
+
+body {
+    background-color: rgb(250, 245, 186);
+    color: rgb(8, 3, 26);
+}
+
+#container a {
+    color: rgb(255, 150, 0);
+}
+
+#header {
+    background-color: rgb(255, 214, 107);
+}
+
+#navbar {
+    background-color: rgb(252, 230, 97);
+}
+
+#navbar li a {
+    color: rgb(255, 150, 0);
+}
+
+#navbar li a:hover {
+    color: rgb(245, 130, 0);
+}
+
+aside {
+    background-color: rgb(255, 214, 107);
+}
+
+main {
+    background-color: rgb(250, 245, 186);
+}
+
+footer {
+    background-color: rgb(252, 230, 97);
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(255, 150, 0);
+}
+
+strong {
+    color: rgb(255, 150, 0);
+}
+
+.box {
+    background-color: rgb(255, 214, 107);
+    border: 1px solid rgb(255, 150, 0);
+}
+
+#topBar {
+    background-color: rgb(255, 214, 107);
+}
