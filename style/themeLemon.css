@@ -1,3 +1,9 @@
+/* user theming */
+.linkCURRENT {
+    color: rgb(143, 100, 40) !important;
+}
+
+/* default theming */
 :root {
     --header-image: url('../imgs/headLemons.jpg');
     --content: rgb(67, 37, 110);

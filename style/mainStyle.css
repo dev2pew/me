@@ -6,6 +6,12 @@
     user-select: none;
 }
 
+marquee p
+{
+    white-space:nowrap;
+}
+
+
 @keyframes gradientSCROLL {
     0%{background-position: 0%}
     50%{background-position: 250%;}
@@ -14,6 +20,15 @@
 
 .dev2pew {
     color: aquamarine;
+}
+
+@keyframes marquee-animation {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .gradRAINBOW { /* gradient rainbow animation */
@@ -39,6 +54,10 @@
     background-image: repeating-linear-gradient(
         to left, #c80064, #b600c2, #9600c2, #e9cbf7, #ffffff, #e9cbf7, #9600c2, #c80064
     ) !important;
+}
+
+.hoverDecor a:hover {
+    cursor: pointer;
 }
 
 
